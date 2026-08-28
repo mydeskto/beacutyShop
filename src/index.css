@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #1C3829;
+    --color-primary-dark: #12241A;
+    --color-primary-light: #2D543F;
+    --color-accent: #C5A880;
+    --color-accent-light: #F4EFE6;
+    --color-sage: #8DA792;
+    --color-sage-light: #EAEFEA;
+    --color-sand: #F7F4EE;
+    --color-surface: #FFFFFF;
+    --color-border: #E8E4DC;
+    --color-text-main: #1D2B22;
+    --color-text-muted: #5E6E64;
+  }
+
+  body {
+    /* Amazon Ember font stack with Inter & Plus Jakarta Sans */
+    font-family: "Amazon Ember", "Inter", "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--color-text-main);
+    background-color: #FAF8F5;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11", "tnum";
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: "Amazon Ember", "Inter", "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+  }
+
+  .font-serif {
+    font-family: "Playfair Display", Georgia, serif;
+  }
+
+  .font-amazon {
+    font-family: "Amazon Ember", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  /* Global Cursor Pointer Rules for All Buttons and Interactive Controls */
+  button,
+  [role="button"],
+  a,
+  input[type="submit"],
+  input[type="button"],
+  input[type="reset"],
+  input[type="checkbox"],
+  input[type="radio"],
+  select,
+  summary,
+  .cursor-pointer {
+    cursor: pointer !important;
+  }
+
+  button:not(:disabled),
+  [role="button"] {
+    user-select: none;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #F4EFE6;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

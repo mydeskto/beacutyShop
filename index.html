@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PURELIS | Clean Beauty & Home Essentials</title>
+    <meta name="description" content="Naturally pure, clean, effective skincare and modern home kitchen essentials crafted with nature's finest ingredients." />
+    <script>
+      // Sandboxed environment compatibility for window.fetch assignment
+      try {
+        const _origFetch = window.fetch;
+        let _activeFetch = _origFetch;
+        Object.defineProperty(window, 'fetch', {
+          get: function() { return _activeFetch || _origFetch; },
+          set: function(val) { _activeFetch = val; },
+          configurable: true,
+          enumerable: true
+        });
+      } catch (e) {
+        // window.fetch already configured or defined
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    <meta property="og:title" content="PURELIS | Clean Beauty & Home Essentials" />
+    <meta property="og:description" content="Clean, effective, cruelty-free skincare & sustainable home essentials." />
+    <meta property="og:type" content="website" />
+  </head>
+  <body class="bg-[#FAF8F5] text-[#222E26] font-sans antialiased selection:bg-[#2C4837] selection:text-[#FFFFFF]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

@@ -1,0 +1,6 @@
+{
+  "name": "Purelis - Premium Beauty & Home Lifestyle Store",
+  "description": "A high-end, modern ecommerce platform for clean beauty, skincare, cosmetics, and home & kitchen essentials with a dynamic CMS, real-time cart, Stripe checkout, customer portal, and full admin dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
